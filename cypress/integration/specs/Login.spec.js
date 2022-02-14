@@ -13,12 +13,12 @@ describe ('yemeksepeti actions' ,() => {
     })
     
     it('Correct username and wrong password login test', ()  => {
-        login('yemeksepeticase@gmail.com', 'Yemekspt1')
+        login('yemeksepetideneme1234@gmail.com', 'Yemeksp')
         errorMessageControl('Hatalı giriş. Lütfen kullanıcı adı ve şifrenizi kontrol edip tekrar deneyiniz.')
     })
     
     it('Wrong username and correct password login test', ()  => {
-        login('yemeksepeticase@gmail.c', 'Yemekspt123.')
+        login('yemeksepetideneme1234@gmail.c', 'Yemeksepeti1234.')
         errorMessageControl('Hatalı giriş. Lütfen kullanıcı adı ve şifrenizi kontrol edip tekrar deneyiniz.')
     })
 
