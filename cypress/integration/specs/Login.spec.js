@@ -13,7 +13,7 @@ describe ('yemeksepeti actions' ,() => {
     })
     
     it('Correct username and wrong password login test', ()  => {
-        login('yemeksepetideneme1234@gmail.com', 'Yemeksp')
+        login('yemeksepetideneme1234@gmail.com', 'Yemeks')
         errorMessageControl('Hatalı giriş. Lütfen kullanıcı adı ve şifrenizi kontrol edip tekrar deneyiniz.')
     })
     
@@ -34,22 +34,22 @@ describe ('yemeksepeti actions' ,() => {
     })
     
     it('Wrong username and empty password login test', ()  => {
-        login('yemeksepeticase@gmail.c', null)
+        login('yemeksepetideneme1234@gmail.c', null)
         wrongPasswordMessageControl('Lütfen şifrenizi giriniz.')
     })
     
     it('Correct username and empty password login test', ()  => {
-        login('yemeksepeticase@gmail.com', null)
+        login('yemeksepetideneme1234@gmail.com', null)
         wrongPasswordMessageControl('Lütfen şifrenizi giriniz.')
     })
     
     it('Empty username and wrong password login test', ()  => {
-        login(null, 'Yemeksp')
+        login(null, 'Yemeks')
         wrongUsernameMessageControl('Lütfen kullanıcı adınızı/e-postanızı giriniz.')
     })
 
     it('Empty username and correct password login test', ()  => {
-        login(null, 'Yemekspt123.')
+        login(null, 'Yemeksepeti1234.')
         wrongUsernameMessageControl('Lütfen kullanıcı adınızı/e-postanızı giriniz.')
     })
 })   
