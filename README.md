@@ -18,7 +18,7 @@ This case requires the following softwares to run.
 * Chrome version 98 (Make sure Chrome is installed in your machine and [chromedriver](https://sites.google.com/a/chromium.org/chromedriver/) is in PATH.)
 
 ## Project Architecture
-* specs folder: I created two spec files, Login and FavoriteRestaurant, inside the integration folder
+* specs folder: I created two spec files, Login and FavoriteRestaurant, inside the integration folder.
 * data.json file: I created data.json file inside the fixtures folder. 
 !!! PLEASE ENTER YOUR PASSWORD AND MAIL ADDRESS INSIDE data.json files.
 * screenshots folder: I saved the screenshots in the Screenshots folder.
