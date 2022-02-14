@@ -1,4 +1,3 @@
-
 export function navigate() {
     cy.visit('https://www.yemeksepeti.com') 
     cy.setCookie("splashViewed", "true")

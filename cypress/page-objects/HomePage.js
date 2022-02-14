@@ -1,4 +1,3 @@
-
 export function selectRegionByValue(restaurantName) {
     cy.get('.col-md-4.form > .select2 > .selection > .select2-selection > .select2-selection__arrow').should('be.visible').click()
     cy.get('.select2-results__option').contains(restaurantName).click()
