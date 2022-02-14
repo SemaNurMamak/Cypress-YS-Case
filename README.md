@@ -22,13 +22,11 @@ This case requires the following softwares to run.
 * data.json file: I created data.json file inside the fixtures folder. 
 !!! PLEASE ENTER YOUR PASSWORD AND MAIL ADDRESS INSIDE data.json files.
 * screenshots folder: I saved the screenshots in the Screenshots folder.
-* page-objects folder: 
+* page-objects folder: I used the Page Object Model to reduce code duplication and improve test case maintenance. I created page-object folder for this. Each class file contains only the corresponding web page elements. This improves readability and simplifies maintenance for each class.
 
 ## Run specs
-
 * The tests are run on Chrome by default.
 * You can execute specs as `npx cypress open`
-
 
 ## Report Directory
   * Install cypress-mochawesome-reporter : 
@@ -47,7 +45,6 @@ This case requires the following softwares to run.
   * Add an Entry In support/index.js:
   Project root folder > Navigate to cypress folder > support folder> index.js file. Add the below code:
   `import 'cypress-mochawesome-reporter/register`
-
 
   * Execute Your Test in The Command-Line Using the Below Command:
   You should run this code in terminal.
